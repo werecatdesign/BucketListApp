@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--- HOME PAGE --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>Instructions</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created home screen stylesheet --->
+        <link rel = "stylesheet" href = "00_instructions_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+          
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    
+    <!--- Use the ID "bootstrap-overrides" for the body, otherwise the body settings created in our stylesheet is in conflict with the body settings from the bootstrap stylesheet. The reason for using an ID is that an ID always weighs more in HTML than a class and especially more than a standard element like "body". And what weighs more is prioritised. --->
+    
+    <body id = "bootstrap-overrides">
+                
+        <!--- Help Section --->
+            <div class = "helpbox" id = "helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Instructions Page</b></h2>
+                    <p>This is the page with instructions for your app.</p>
+                    <p><u>Buttons:</u><br><image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>                    
+                </div>
+                    
+            </div>       
+        
+        
+           <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+            <div class = "header" data-role = "header">
+                <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+                <h1 class = "headerheading" id = "smallerheading">
+                INSTRUCTIONS
+                </h1>
+                <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+            </div> 
+        
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">            
+          
+            
+            <!--- Regular Page - Main Part ---> <!--- PLEASE READ: Buttons are linked via <a href = "">, everything where it says button instead of a is still not programmed, which means that there is still no page that I could link to. I left button because it's easier to see where I have not yet entered a link yet. --->
+            
+                                <div class = "main">
+                    <br>
+                    <div class="slideshow-container">
+
+                    <div class="mySlides">
+                      <img src="Screenshots/1_welcome.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">
+                          The Bucket List App offers pensioners a digital platform to plan, organize and share their lifetime goals. In order to reach their goals more capably, you can connect and collaborate with other users and optionally participate in a monthly lottery.
+                    </div>
+                    </div>
+
+                    <div class="mySlides">
+                      <img src="Screenshots/2_homepage_0.png" style="width:75%">
+                        <br><br>
+                      <div class="text">If you need help with the content of the page and the functionality of the buttons, click on the question mark button in the top right corner of the screen and read the given information. </div>
+                    </div>
+
+                    <div class="mySlides">
+                      <img src="Screenshots/2_homepage_1.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">When you read the given information you can always exit the information window by clicking on the "X" button on the upper right corner.</div>
+                    </div>
+                          <div class="mySlides">
+                      <img src="Screenshots/2_homepage_2.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">On the home page of the app, you can access your bucket list, your profile, your contacts, the discovery page and the lottery page, by clicking on the buttons.</div>
+                    </div>
+                        
+                          <div class="mySlides">
+                      <img src="Screenshots/3_bucketlist_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">On the 'Bucket list' page you can see all the items you have on your bucket list. If you want to add another item, you can click on the button shown on the picture and add a goal to complete.</div>
+                        </div>
+                          <div class="mySlides">
+                      <img src="Screenshots/3_bucketlist_1_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">When you want to add a new item to your bucket list, a window with a texting box is displayed, and you can write your goal there.When you are ready you can click 'Save', to save the item to your bucket list, or 'Cancel' to undo the action.</div>
+                        </div>
+                          <div class="mySlides">
+                      <img src="Screenshots/3_bucketlist_2_1.png" style="width:75%">
+                        <br><br>
+                      <div class="text">If you want to read more about an item on the bucket list you can click on it and you will have access to the detailed information about the item.</div>
+                        </div>
+                         <div class="mySlides">
+                      <img src="Screenshots/3_bucketlist_2_2.png" style="width:75%">
+                        <br><br>
+                      <div class="text">If you want to go back to the page with the items on the bucket list, you have to click on the back button in th lower left corner of the screen. Every time when you want to go back to the previous pages, you can use this button</div>
+                         </div>
+                         <div class="mySlides">
+                      <img src="Screenshots/3_bucketlist_3.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">On the 'Bucket list' page you can also access the 'Experiences' page where you can see all the items from the bucket list that have been completed.</div>
+                        </div>
+                        <div class="mySlides">
+                      <img src="Screenshots/4_experiences_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to see detailed information about the experiences that you or the other users of the app that have been completed, you need to click on the picture, and the details will be shown.</div>
+                        </div>
+                         <div class="mySlides">
+                      <img src="Screenshots/4_experiences_2.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">Whenever you want to go the 'Home page', you have to click on the home button in the upper left corner of the screen.</div>
+                        </div>
+                        <div class="mySlides">
+                      <img src="Screenshots/6_profile_3.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to review your personal information, you can click on "About me" on your profile page.</div>
+                        </div>
+                           <div class="mySlides">
+                      <img src="Screenshots/6_profile_5.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">From your Profile page, you can also access the messages page. As well as your Bucket list and your experiences.</div>
+                        </div>
+                            <div class="mySlides">
+                      <img src="Screenshots/6_profile_6.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">In the messages page, you can review all the messages you have received from the other users of the app. You can open the chat by clicking on the message.</div>
+                        </div>    
+                        <div class="mySlides">
+                      <img src="Screenshots/6_profile_7.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to send a message to someone from your contacts, you just have to write your message in the text box, and click on 'SEND'.</div>
+                        </div>
+                         <div class="mySlides">
+                      <img src="Screenshots/8_contacts_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">On the 'Contacts' page you can open the profile of someone of the other users, by clicking on the profile picture. You have also the option to send them a message or to delete the contact from your contact list.</div>
+                        </div>
+                        
+                        <div class="mySlides">
+                      <img src="Screenshots/8_contacts_4.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">When you are in someone else's bucket list, you can add some of their bucket list items to your bucket list, by clicking on the '+' that is next to the item. You can also send a message to that user, by clicking the message button in the lower right corner of the screen.</div>
+                        </div>
+                        
+                            <div class="mySlides">
+                      <img src="Screenshots/9_discover_1.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to get an inspiration you can go to 'Discover' page and choose any of the categories, and review the other users' bucket lists.</div>
+                        </div>
+                        
+                            <div class="mySlides">
+                      <img src="Screenshots/9_discover_2.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you like something and you want to add it to your bucket list just click on the button '+', and the item will be added to your list. You also have the option to see the other users' bucket lists or to send them a message.</div>
+                        </div>
+                             <div class="mySlides">
+                      <img src="Screenshots/10_home_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">You can participate in the monthly lottery of our app.</div>
+                        </div>
+                            <div class="mySlides">
+                      <img src="Screenshots/11_lottery_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to participate in the lottery you need to become a premium user of the Bucket List App.</div>
+                        </div>
+                        
+                         <div class="mySlides">
+                      <img src="Screenshots/11_lottery_1.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">If you want to participate in the lottery you need to become a premium user of the Bucket List App. When you are premium user you have the chance to win up to €100 for the next endeavor on your bucket list!</div>
+                        </div>
+                          <div class="mySlides">
+                      <img src="Screenshots/6_profile_0.png" style="width:75%">
+                        <br><br> 
+                      <div class="text">You can disable your premium membership any time from your profile page. </div>
+                        </div>
+                        
+                         <div class="mySlides">
+                        <br><br>  <br><br>    <br><br> 
+                      <div class="text">Thank you for downloading the Bucket List app! We hope you will have fun while using it. </div>
+                        </div>
+                        
+                        <!--------ARROWS----------------->
+                        <div class="slideArrows">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                    
+                    </div>
+                    <br>
+
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                     
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      slides[slideIndex-1].style.display = "block"; 
+                    }
+                    </script>
+
+             <a href="00_home_page.html" class="instrbutton"> GO TO 'HOME PAGE' </a>
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        </div>
+    </body>
+</html>

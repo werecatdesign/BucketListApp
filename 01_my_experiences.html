@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!--- Messages (MY PROFILE) --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>MY EXPERIENCES</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created profile stylesheet --->
+        <link rel = "stylesheet" href = "01_My_Experiences_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides" onload ="checkExperiences();">
+        
+        
+         <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>My Experiences</b></h2>
+                    <p>This is the page where you can see all the completed items from your bucket.<br></p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+               <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading" id = "smallerheading">
+                 My Experiences
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+          <!------------------------------------------ NAVIGATION BAR ----------------------------------------------------->
+
+                    <div class="navbar">
+                      <a href="01_my_bucketlist.html" >Bucket List</a>
+                      <a href="01_my_experiences.html" class="active">Experiences</a>
+                    </div>
+                  
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">
+            
+    
+            <!-------------------------------------------- Regular Page - Main Part -------------------------------------->
+            <div class = "main">
+                
+                <!--- Completely new experience from new BL items --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_new" style="display: none"> 
+                    <a href = "" class = "iconcontainer" id = "iconcontainer_exp_new"></a>
+                    <b><p id = "textentry_new"></p></b>
+                </div>
+                
+                <!--- Experiences from Simon's bucket list --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_marathon" style="display: none"> 
+                    <a href = "101_Details_Marathon.html" class = "iconcontainer" id = "iconcontainer_exp_marathon"></a>
+                    <p><b>Run a 10K marathon</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_grandcanyon" style="display: none"> 
+                    <a href = "101_Details_GrandCanyon.html" class = "iconcontainer" id = "iconcontainer_exp_grandcanyon"></a>
+                    <p><b>See the Grand Canyon</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_nicaragua" style="display: none"> 
+                    <a href = "101_Details_Bolivia.html" class = "iconcontainer" id = "iconcontainer_exp_nicaragua"></a>
+                    <p><b>Visit Bolivia with a friend</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_dolphins" style="display: none"> 
+                    <a href = "101_Details_swim.html" class = "iconcontainer" id = "iconcontainer_exp_dolphins"></a>
+                    <p><b>Swim with dolphins</b></p>
+                </div>                          
+                
+                <!--- Experiences from Kurt's bucket list --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_refugees" style="display: none"> 
+                    <a href = "101_Details_CollectMoney.html" class = "iconcontainer" id = "iconcontainer_exp_refugees"></a>
+                    <p><b>Collect money for refugees</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_weekendtrip" style="display: none"> 
+                    <a href = "101_Details_WeekendTrip.html" class = "iconcontainer" id = "iconcontainer_exp_weekendtrip"></a>
+                    <p><b>Weekend trip to an unknown destination</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_techcourse" style="display: none"> 
+                    <a href = "101_Details_TechCourse.html" class = "iconcontainer" id = "iconcontainer_exp_techcourse"></a>
+                    <p><b>Sign up for a technology course</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_sushi" style="display: none"> 
+                    <a href = "101_Details_CookSushi.html" class = "iconcontainer" id = "iconcontainer_exp_sushi"></a>
+                    <p><b>Learn how to cook Japanese sushi</b></p>
+                </div>
+                              
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_tennis" style="display: none"> 
+                    <a href = "101_Details_playTennis.html" class = "iconcontainer" id = "iconcontainer_exp_tennis"></a>
+                    <p><b>Start to play tennis on a professional level</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_theatre" style="display: none"> 
+                    <a href = "101_Details_TheatreInvitation.html" class = "iconcontainer" id = "iconcontainer_exp_theatre"></a>
+                    <p><b>Invite my wife to the theatre</b></p>
+                </div>
+                
+                <!--- Experiences from Luke's bucket list --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_sketch" style="display: none"> 
+                    <a href = "101_Details_SketchPortrait.html" class = "iconcontainer" id = "iconcontainer_exp_sketch"></a>
+                    <p><b>Sketch a portrait of a stranger</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_piano" style="display: none"> 
+                    <a href = "101_Details_PianoLessons.html" class = "iconcontainer" id = "iconcontainer_exp_piano"></a>
+                    <p><b>Give free piano lessons to children</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_scotland" style="display: none"> 
+                    <a href = "101_Details_AdventureScotland.html" class = "iconcontainer" id = "iconcontainer_exp_scotland"></a>
+                    <p><b>Backpack adventure in Scotland</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_familyparty" style="display: none"> 
+                    <a href = "101_Details_FamilyParty.html" class = "iconcontainer" id = "iconcontainer_exp_familyparty"></a>
+                    <p><b>Throw a family party and cook for everyone</b></p>
+                </div>
+                              
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_15kg" style="display: none"> 
+                    <a href = "101_Details_LoseWeight.html" class = "iconcontainer" id = "iconcontainer_exp_15kg"></a>
+                    <p><b>Lose 15kg through fitness training</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_rocknpop" style="display: none"> 
+                    <a href = "101_Details_VisitTheMuseum.html" class = "iconcontainer" id = "iconcontainer_exp_theatre"></a>
+                    <p><b>Visit the Rock 'n' Pop Museum in Gronau</b></p>
+                </div>
+                
+                 <!--- Experiences from Emma's bucket list --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_cupcake" style="display: none"> 
+                    <a href = "101_Details_CupcakeBusiness.html" class = "iconcontainer" id = "iconcontainer_exp_cupcake"></a>
+                    <p><b>Open my own cupcake business</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_opera" style="display: none"> 
+                    <a href = "#" class = "iconcontainer" id = "iconcontainer_exp_opera"></a>
+                    <p><b>Go to the opera "The Turn of the Screw"</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_italian" style="display: none"> 
+                    <a href = "101_Details_LanguageCourse.html" class = "iconcontainer" id = "iconcontainer_exp_italian"></a>
+                    <p><b>Complete an Italian language course</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_yoga" style="display: none"> 
+                    <a href = "101_Details_Yoga.html" class = "iconcontainer" id = "iconcontainer_exp_yoga"></a>
+                    <p><b>Give yoga classes</b></p>
+                </div>
+                              
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_reef" style="display: none"> 
+                    <a href = "101_Details_BarrierReef.html" class = "iconcontainer" id = "iconcontainer_exp_reef"></a>
+                    <p><b>See the Great Barrier Reef</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_homeless" style="display: none"> 
+                    <a href = "101_Details_Food.html" class = "iconcontainer" id = "iconcontainer_exp_homeless"></a>
+                    <p><b>Donate food to homeless people</b></p>
+                </div>
+                
+                <!--- Existing Experiences --->
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "exp_skydining" style="display: block"> 
+                    <a href = "201_Details_Skydining.html" class = "iconcontainer" id = "iconcontainer_expSimonOne"></a>
+                    <p><b>Dining in the sky</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "exp_sledding" style="display: block"> 
+                    <a href = "201_Details_Sledding.html" class = "iconcontainer" id = "iconcontainer_expSimonTwo"></a>
+                    <p><b>Sledding down a volcano</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "exp_diving" style="display: block"> 
+                    <a href = "201_Details_Diving.html" class = "iconcontainer" id = "iconcontainer_expSimonThree"></a>
+                    <p><b>Diving into the Great Blue Hole</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "exp_saltflats" style="display: block"> 
+                    <a href = "201_Details_Saltflats.html" class = "iconcontainer" id = "iconcontainer_expSimonFour"></a>
+                    <p><b>Crossing the salt flats in Bolivia</b></p>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "exp_swinging" style="display: block"> 
+                    <a href = "201_Details_Swinging.html" class = "iconcontainer" id = "iconcontainer_expSimonFive"></a>
+                    <p><b>Swinging at the end of the world</b></p>
+                </div>
+                
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>
+             <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+    
+</html>

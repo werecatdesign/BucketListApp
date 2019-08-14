@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--- DISCOVER MAIN PAGE --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>DISCOVER</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created discover page stylesheet --->
+        <link rel = "stylesheet" href = "04_Discover_Main_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides">
+        
+        <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Discover</b></h2>
+                    <p>Discover fellow users' bucket lists and get inspired! Select a category that sounds interesting for you by clicking on one of the large orange buttons.</p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+        
+        
+        <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading">
+            Discover
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div> 
+        
+        <!------------------------------------------------------ PAGE --------------------------------------------------------------->
+        
+             
+        <div class = "page" data-role = "page">            
+                
+            <!--- Regular Page - Main Part --->
+            <div class = "main">            
+                <div class = "halfwidthtextboxes">
+                    <a href = "04_discover_travel.html" class = "textboxleft" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_travel"></div>
+                        <h2 class = "buttonheading">Travel</h2>
+                    </a>
+                    <a href = "04_discover_learning.html" class = "textboxright" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_learning"></div>
+                        <h2 class = "buttonheading">Learning</h2>
+                    </a>
+                </div>
+                <div class = "halfwidthtextboxes">
+                    <a href = "04_discover_sports.html" class = "textboxleft" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_sports"></div>
+                        <h2 class = "buttonheading">Sports</h2>
+                    </a>
+                    <a href = "04_discover_culture.html" class = "textboxright" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_culture"></div>
+                        <h2 class = "buttonheading">Culture</h2>
+                    </a>
+                </div>
+                <div class = "halfwidthtextboxes">
+                    <a href = "04_discover_volunteer.html" class = "textboxleft" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_volunteer"></div>
+                        <h2 class = "buttonheading">Volunteer</h2>
+                    </a>
+                    <a href = "04_discover_cooking.html" class = "textboxright" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_cooking"></div>
+                        <h2 class = "buttonheading">Cooking</h2>
+                    </a>
+                </div>
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>
+            
+                    
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--- EMMA'S PROFILE (MAIN) --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>EMMA'S PROFILE</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created profile stylesheet --->
+        <link rel = "stylesheet" href = "02_My_Profile_Main_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides" onload = "CheckContact('emma')">
+        
+        
+         <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>User Profile</b></h2>
+                    <p>This is another user's personal profile. View details by clicking on one of the large orange buttons.<br></p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/addcontact.png" alt = "Add Contact" height ="25px"></image> Add this user as a contact.<br>
+                        <image src ="Design/Elements/complete_blue.png" alt = "Added Contact" height ="25px"></image> You have already added this user as a contact.<br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+        
+        <!--- Contacts Confirmation --->
+            <div class = "helpbox" id="addeditem1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeAdded()"></button>
+                <div class = "helptext" id = "addedcontacttext">
+                    <p>This user has been added to your contacts.</p>
+                    <a href = "03_contacts.html" class = "fullwidthtextbox" id = "gotocontacts" onclick="closeAdded()"><h2 class = "buttonheading">View my contacts</h2></a>
+                </div>
+            </div>
+        
+        <!--- Undo Contact --->
+            <div class = "helpbox" id="addeditem2">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeUndo()"></button>
+                <div class = "helptext" id = "addedcontacttext">
+                    <p>Are you sure you want to remove this user from your contacts?</p>
+                    <div class = "halfwidthtextboxes">
+                        <button id = "yesorno" class="textboxleft" data-role = "textbox" onclick = "closeUndo(); UndoEmma()">
+                            <h2 class = "buttonheading">Yes</h2> 
+                        </button>
+                        <button id = "yesorno" class = "textboxright" data-role = "textbox" onclick = "closeUndo()">
+                            <h2 class = "buttonheading">No</h2>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading" id = "smallerheading">
+            Emma's Profile
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+        
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">           
+            
+                  
+            <!--- Regular Page - Main Part --->
+            <div class = "main">                
+                <button class = "gearwheel" id = "iconcontainer_add_02_emma" data-role = "navbutton" onclick = "openAdded(); AddEmma()"></button>
+                <button class = "iconcontainer_complete" id = "iconcontainer_complete_02_emma" onclick = "openUndo()"></button>
+                <button class = "profilepicbox">
+                    <div class = "profilepiccontainer" id = "iconcontainer_emma"></div>
+                    <h2 class = "buttonheading"><b>Emma Patterson</b></h2>
+                </button>                
+                <div class = "fullwidthtextbox">
+                    <a href="02_about_emma.html" class="textboxcenter" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_aboutme"></div>
+                        <h2 class = "buttonheading">About Emma</h2>
+                    </a>
+                </div>
+                <div class = "fullwidthtextbox">
+                    <a href="01_emmas_bucketlist.html" class="textboxcenter" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_bucketlist"></div>
+                        <h2 class = "buttonheading">Emma's Bucket List</h2>
+                    </a>
+                </div>
+                <div class = "fullwidthtextbox">
+                    <a href="01_emmas_experiences.html" class="textboxcenter" data-role = "textbox">
+                        <div class = "iconcontainer" id = "iconcontainer_experiences"></div>
+                        <h2 class = "buttonheading">Emma's Experiences</h2>
+                    </a>
+                </div>
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>          
+                        
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+</html>

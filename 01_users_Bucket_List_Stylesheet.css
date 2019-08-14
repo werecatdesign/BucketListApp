@@ -1,0 +1,145 @@
+
+
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+[data-role="textbox"] {
+    margin: 2vh 0px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rightcontainer {
+    flex: 0 0 60vw;
+    margin-left: 1vw;
+}
+
+.buttonheading {
+    font-size: 3.25vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+[data-role="textbox"] p {
+    margin: 0 0 2vh 0;
+    font-size: 3vh;
+}
+/* 
+*************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+
+
+/* Specification for the textbox containing Simon's (or anyone else's) Profile picture is that it is transparent. */
+
+.profilepicbox {
+    color: #ffffff;
+    padding: 2vw;
+    border-radius: 25px;
+    border-style: none;
+    font-family: Tahoma;
+    margin-top: 1vh;
+    background-color: #2a70a3;
+}
+
+/* The icon container is a transparent box within a button that serves to guarantee that the size of the icon on a button can grow and shrink according to the screen size. 
+
+This is an example of a page-specific height. Depending how high the icon needs to be, the size can be varied. Please use vh properties.*/
+.iconcontainer {
+    height: 9vh;
+}
+
+/* *********************************************** ICON CONTAINERS for this page ********************************************** */
+
+/* In HTML, the respective icons can be assigned by naming the id of the iconcontainer. The IDs are specified below with "#" --> ID sign.*/
+
+
+/*bucket icon*/
+#iconcontainer_item_one {
+    background-image: url(Design/Elements/bucketlist_checker.png);
+    float: left;
+    height: 16vh;
+    flex: 0 0 16vh;
+    margin-right: 3vw;
+}
+
+p {
+    flex: 0 0 38vw;
+    text-align: left;
+}
+
+/*Add item to your bucket list button*/
+#iconcontainer_item_small {
+    background-image: url(Design/Elements/additem.png);
+    display: inline;
+    height: 7vh;
+    flex: 0 0 7vh;
+    float: right;
+    margin-left: 5vw;
+}
+
+#addeditemtext {
+    background-color: #2a70a3;
+}
+
+#gotobucketlist {
+    color: #ffffff;
+    background-color: #ff8d11;
+    padding: 2vw;
+    border-radius: 25px;
+    border-style: none;
+    font-family: Tahoma;
+    display: block;
+    text-align: center;
+}
+
+#gotobucketlist:hover {
+    text-decoration: none;
+}
+
+/* ***********************The text in the items of the bucket list********************/
+
+/* *********************************************************** navigation bar ******************************************************* */
+#navigationbar{
+  background-color:#1a4564;
+  width: 100%; 
+}
+.navbar {
+  background-color:#1a4564;
+  width: 100%; 
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ff8d08;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.navbar a.active {
+  background-color: #ff8d11;
+  color: white;
+   border-radius: 25px;
+}
+
+
+.additem {
+    background-image: url(Design/Elements/sendmessage.png);
+    position: fixed;
+    right: 4vw;
+    top: .header.height;
+    bottom: 1.5vh;
+}

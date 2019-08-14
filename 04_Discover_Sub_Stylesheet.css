@@ -1,0 +1,107 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+/* *************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+
+[data-role="textbox"] {
+    margin: 2vh 0px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightcontainer {
+    flex: 0 0 60vw;
+    margin-left: 1vw;
+}
+
+.buttonheading {
+    font-size: 3.25vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+[data-role="textbox"] p {
+    margin: 0 0 1vh 0;
+    font-size: 3vh;
+}
+
+#gotobucketlist {
+    color: #ffffff;
+    background-color: #ff8d11;
+    padding: 2vw;
+    border-radius: 25px;
+    border-style: none;
+    font-family: Tahoma;
+    display: block;
+    text-align: center;
+}
+
+#gotobucketlist:hover {
+    text-decoration: none;
+}
+
+/* *********************************************** ICON CONTAINERS for this page ********************************************** */
+
+/* In HTML, the respective icons can be assigned by naming the id of the iconcontainer. The IDs are specified below with "#" --> ID sign.*/
+
+/*Emma Patterson */
+#iconcontainer_emma {
+    background-image: url(Design/ProfilePics/emma.png);
+    float: left;
+    height: 16vh;
+    flex: 0 0 16vh;
+}
+
+/*Luke Smith*/
+#iconcontainer_luke {
+    background-image: url(Design/ProfilePics/luke.png);
+    float: left;
+    height: 16vh;
+    flex: 0 0 16vh;
+}
+
+/*Kurt Weller*/
+#iconcontainer_kurt {
+    background-image: url(Design/ProfilePics/kurt.png);
+    float: left;
+    height: 16vh;
+    flex: 0 0 16vh;
+}
+
+#iconcontainer_details {
+    background-image: url(Design/Elements/bucketlist_checker.png);
+    display: inline-block;
+    height: 7vh;
+    width: 7vh;
+    float: center;
+}
+
+#iconcontainer_additem {
+    background-image: url(Design/Elements/addcontact.png);
+    display: inline-block;
+    height: 7vh;
+    width: 7vh;
+    float: center;
+    margin-left: 5vw;
+}
+
+#iconcontainer_sendmessage {
+    background-image: url(Design/Elements/sendmessage.png);
+    display: inline-block;
+    height: 7vh;
+    width: 7vh;
+    float: center;
+    margin-left: 5vw;
+}
+
+
+/* *********************************************************** Added Item POP-UP ******************************************************* */
+
+#addeditemtext {
+    background-color: #2a70a3;
+}

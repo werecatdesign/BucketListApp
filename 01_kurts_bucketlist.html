@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--- Messages (MY PROFILE) --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>Kurt's BUCKET LIST</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created profile stylesheet --->
+        <link rel = "stylesheet" href = "01_users_Bucket_List_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides">
+        
+        
+         <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Bucket List</b></h2>
+                    <p>This is the page where you can see all the item Kurt have added to his bucket list. <br></p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/additem.png" alt = "add item" height ="25px"></image> Add item to your bucket list. <br>
+                        <image src ="Design/Elements/sendmessage.png" alt = "add item" height ="25px"></image> Send message. <br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+        
+        <!--- Add Item Confirmation --->
+            <div class = "helpbox" id="addeditem1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeAdded()"></button>
+                <div class = "helptext" id = "addeditemtext">
+                    <p>This item has been added to your personal bucket list.</p>
+                    <a href = "01_my_bucketlist.html" class = "fullwidthtextbox" id = "gotobucketlist" onclick="closeAdded()"><h2 class = "buttonheading">Go to my bucket list</h2></a>
+                </div>
+            </div>
+        
+               <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading" id = "smallerheading2">
+                Kurt's Bucket List
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+           <!------------------------------------------ NAVIGATION BAR ----------------------------------------------------->
+
+                    <div class="navbar" id = "navigationbar">
+                      <a href="01_kurts_bucketlist.html" class="active">Bucket List</a>
+                      <a href="01_kurts_experiences.html">Experiences</a>
+                    </div>
+                  
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">
+            
+   
+            <!-------------------------------------------- Regular Page - Main Part -------------------------------------->
+            <div class = "main">
+                        
+         
+                <div class = "fullwidthtextbox" data-role = "textbox" id = "bl_refugees">
+                    <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                    <a href="101_Details_CollectMoney.html "style="text-decoration: none;  color: #ffffff" >
+                    <p>Collect money for refugees</p>    
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_refugees')"></a>     </a>       
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                   <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                     <a href="101_Details_WeekendTrip.html "style="text-decoration: none;  color: #ffffff" >
+                    <p>Weekend trip to an unknown destination</p>
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_weekendtrip')"></a>
+                    </a>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                     <a href="101_Details_TechCourse.html "style="text-decoration: none;  color: #ffffff" >
+                    <p>Sign up for a technology course</p>
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_techcourse')"></a>
+                    </a>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                    <a href="101_Details_CookSushi.html "style="text-decoration: none;  color: #ffffff" >
+                    <p >Learn how to cook Japanese sushi</p>
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_sushi')"></a> 
+                    </a>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                    <a href="101_Details_playTennis.html"style="text-decoration: none;  color: #ffffff" >
+                    <p >Start to play tennis on a professional level</p>
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_tennis')"></a> 
+                    </a>
+                </div>
+                
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <div class = "iconcontainer" id = "iconcontainer_item_one"></div>
+                     <a href="101_Details_TheatreInvitation.html"style="text-decoration: none;  color: #ffffff" >
+                    <p >Invite my wife to the theatre</p>
+                    <a class = "iconcontainer" id = "iconcontainer_item_small" onclick="openAdded(); addBLItem('bl_theatre')"></a> 
+                    </a>
+                </div>
+                
+            <form>
+                <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+            </form>
+            </div>
+            
+              <a href="03_messages_main.html"class = "additem" data-role = "navbutton"></a>
+
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+</html>

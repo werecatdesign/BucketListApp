@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--- DETAILS - Skydiving --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>Skydiving</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created discover subpage stylesheet --->
+        <link rel = "stylesheet" href = "101_Details_BucketList_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides">
+        
+        <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Details</b></h2>
+                    <p>See detailed information about an item.</p>
+                    <p><u>Buttons:</u><br>                        
+                     
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+        
+        <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading">
+            Details
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+        
+        <!------------------------------------------------------ PAGE --------------------------------------------------------------->
+        
+             
+        <div class = "page" data-role = "page"> 
+            
+            <!--- Regular Page - Main Part --->
+            <div class = "main">  
+                <div class = "textboxDetails" data-role = "textboxDetails">
+                    <a class = "iconcontainer" id = "iconcontainer_details"></a>
+                    <div class = "rightcontainer">
+                        <h2 class = "buttonheading">Skydiving</h2>        
+                    </div>
+                </div>
+                        
+                <div class = "fullwidthtextboxDetails" data-role = "textbox" id="details">
+                    <p>Where? - Paracentrum Ameland<br>
+                    <br>
+                    When? - 7th April 2018 <br>
+                    <br>
+                    Why? - Because I want to challenge myself to take a skydive at 65+
+                    </p>                        
+                </div>
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>          
+            
+            
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+</html>

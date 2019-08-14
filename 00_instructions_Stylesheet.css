@@ -1,0 +1,125 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/*Define typefaces*/
+
+@font-face { font-family: 'Tahoma';
+             src: url('Fonts/Tahoma.ttf') format('truetype'); }
+
+/************************CONTENT******************************************************************/
+.content{
+margin: 100px 0;
+}
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+h1 {
+    font-family: Hobo;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+p{
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 16pt;
+    text-align: center;
+}
+/* *************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+
+/********************************* BUTTONS DESIGN  **********************************************************************/
+
+.prev{
+    background-color: #ff8d11;
+    border-radius: 25px;
+    text-decoration: none;
+    left: 0;
+}
+.next{
+    background-color: #ff8d11;
+    border-radius: 25px;
+    text-decoration: none;
+    right: 0;
+}
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 25px;
+}
+
+
+/****************************** Images Container ****************************************/
+.SlideShow{
+    align-items: center;
+}
+
+.text{
+    color: #ffffff;
+    font-family: Tahoma;
+    background-color: #1a4564;
+    border-radius: 25px; 
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Tahoma; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/************FIRST BUTTONS DESIGN *****************************************************/
+
+
+.instrbutton{
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #ff8d11;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Tahoma;
+    text-decoration: none;
+}
+
+.instrbutton:hover{
+    
+    text-decoration: none;
+    color: #ffffff;
+}
+.instrbutton:active{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+

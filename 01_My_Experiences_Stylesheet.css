@@ -1,0 +1,251 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/* The icon container is a transparent box within a button that serves to guarantee that the size of the icon on a button can grow and shrink according to the screen size. 
+
+This is an example of a page-specific height. Depending how high the icon needs to be, the size can be varied. Please use vh properties.*/
+.iconcontainer {
+    height: 25vh;
+    width: 55vw;
+    display: block;
+    float: center;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2vh solid #ff8d11;
+    border-radius: 25px;
+}
+
+[data-role="textbox"] {
+    margin: 2vh 0px;
+    padding: 1vh;
+    background-color: #2a70a3;
+    box-shadow: none;
+}
+
+[data-role="textbox"] p {
+    font-size: 3vh;
+    margin: 0;
+}
+
+/* *************************************************** ICONS **************************************************** */
+
+/* -------------------------------------------------- Simon ---------------------------------------------------- */
+
+/* Dining in the sky */
+#iconcontainer_expSimonOne {
+    background-image: url(Design/Experiences/exp_skydining.png);      
+}
+
+/* Sledding down a volcano */
+#iconcontainer_expSimonTwo {
+    background-image: url(Design/Experiences/exp_sledding.png);
+}
+
+/* Diving the great blue hole */
+#iconcontainer_expSimonThree{
+    background-image: url(Design/Experiences/exp_diving.png);
+}
+
+/* Salt flats */
+#iconcontainer_expSimonFour{
+    background-image: url(Design/Experiences/exp_saltflats.png);
+}
+
+/* Swinging */
+#iconcontainer_expSimonFive{
+    background-image: url(Design/Experiences/exp_swinging.png);
+}
+
+/* -------------------------------------------------- Luke ---------------------------------------------------- */
+
+/* Surfing in Hawaii */
+#iconcontainer_expLukeOne {
+    background-image: url(Design/Experiences/exp_surfing.png);
+}
+
+/* Hiking in Peru */
+#iconcontainer_expLukeTwo {
+    background-image: url(Design/Experiences/exp_hiking.png);
+}
+
+/* Teaching my grandson how to play the guitar */
+#iconcontainer_expLukeThree {
+     background-image: url(Design/Experiences/exp_guitar.png);
+}
+
+/* -------------------------------------------------- Kurt ---------------------------------------------------- */
+
+/* Skydiving */
+#iconcontainer_expKurtOne {
+    background-image: url(Design/Experiences/exp_skydiving.png);
+}
+
+/* Swimming with an Indian Elephant */
+#iconcontainer_expKurtTwo {
+    background-image: url(Design/Experiences/exp_elephant.png);
+}
+
+/* -------------------------------------------------- Emma ---------------------------------------------------- */
+
+/* Riding a train in the countryside */
+#iconcontainer_expEmmaOne {
+    background-image: url(Design/Experiences/exp_train.png);
+}
+
+/* Going to a swing dance class */
+#iconcontainer_expEmmaTwo {
+    background-image: url(Design/Experiences/exp_swingdance.png);
+}
+
+/* Spending two weeks on a farm */
+#iconcontainer_expEmmaThree {
+    background-image: url(Design/Experiences/exp_farm.png);
+}
+
+/* *********************************************************** navigation bar ******************************************************* */
+.navbar {
+  background-color:#1a4564;
+  position: fixed;
+  width: 100%; 
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ff8d08;
+  color: #ffffff;
+  text-decoration: none;
+    border-radius: 25px;
+}
+
+.navbar a.active {
+  background-color: #ff8d11;
+  color: white;
+   border-radius: 25px;
+}
+
+/* ***************************************** Images from experiences that can be added from bucket list ***************************** */
+
+#iconcontainer_exp_new {
+    background-image: url(uploads/bl_new.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_marathon {
+    background-image: url(uploads/bl_marathon.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_grandcanyon {
+    background-image: url(uploads/bl_grandcanyon.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_nicaragua {
+    background-image: url(uploads/bl_nicaragua.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_dolphins {
+    background-image: url(uploads/bl_dolphins.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_refugees {
+    background-image: url(uploads/bl_refugees.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_weekendtrip {
+    background-image: url(uploads/bl_weekendtrip.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_techcourse {
+    background-image: url(uploads/bl_techcourse.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_sushi {
+    background-image: url(uploads/bl_sushi.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_tennis {
+    background-image: url(uploads/bl_tennis.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_theatre {
+    background-image: url(uploads/bl_theatre.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_sketch {
+    background-image: url(uploads/bl_sketch.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_piano {
+    background-image: url(uploads/bl_piano.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_scotland {
+    background-image: url(uploads/bl_scotland.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_familyparty {
+    background-image: url(uploads/bl_familyparty.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_15kg {
+    background-image: url(uploads/bl_15kg.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_rocknpop {
+    background-image: url(uploads/bl_rocknpop.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_cupcake {
+    background-image: url(uploads/bl_cupcake.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_opera {
+    background-image: url(uploads/bl_opera.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_italian {
+    background-image: url(uploads/bl_italian.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_yoga {
+    background-image: url(uploads/bl_yoga.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_reef {
+    background-image: url(uploads/bl_reef.JPG);
+    background-color: #1a4564;
+}
+
+#iconcontainer_exp_homeless {
+    background-image: url(uploads/bl_homeless.JPG);
+    background-color: #1a4564;
+}

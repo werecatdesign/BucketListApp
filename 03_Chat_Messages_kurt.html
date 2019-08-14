@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--- Messages (MY PROFILE) --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>CHAT</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created profile stylesheet --->
+        <link rel = "stylesheet" href = "03_Chat_Messages_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides" onload = "checkKurtsMessages()">        
+        
+         <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Chat</b></h2>
+                    <p>This is the page with your messages with other users of the app.<br></p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/writenewbucketlistitem_blue.png" alt = "write message" height ="25px"></image> Write a message to a user of the app.<br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+         <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading">
+            Chat
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+                  
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">
+            
+           
+            <!--- Regular Page - Main Part --->
+            <div class = "main">
+           
+                <div class="container">
+                  <img src="Design/ProfilePics/kurt.png" alt="Avatar" style="width:100%;">
+                  <p>I completed a few items from my bucket list!</p>
+                  <span class="time-right">12:00</span>
+                </div>
+
+                <div class="container darker">
+                  <img src="Design/ProfilePics/simon.png" alt="Avatar" class="right" style="width:100%;">
+                  <p>Congratulations!</p>
+                  <span class="time-left">13:01</span>
+                </div>
+                
+                <div class="container darker">
+                  <img src="Design/ProfilePics/simon.png" alt="Avatar" class="right" style="width:100%;">
+                  <p>Keep going! </p>
+                  <span class="time-left">13:01</span>
+                </div>
+                
+                <div class="container darker" id = "newmessage_kurt" style = "display: none">
+                  <img src="Design/ProfilePics/simon.png" alt="Avatar" class="right" style="width:100%;">
+                  <p id = "newmessage_kurt_text"></p>
+                      <script type="text/javascript">
+                            document.write ('<span class="time-left" id = "time_sent">', new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}), '<\/span>')                    
+                    </script>
+                </div>
+                
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+                
+                <form action="" method="post" enctype="text/plain" id="entryform">
+                    <input class ="newentry" id = "messageinputfield" type="textarea" name="entry">
+                    <input type="submit" value="Send" onclick = "createMessagetoKurt()"><br>
+                    <br>
+                </form>
+                    
+              
+           <div class = "footer" data-role = "footer"><br>
+           </div>
+        </div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+    
+</html>

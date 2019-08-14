@@ -1,0 +1,64 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+/* *************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+
+[data-role="textbox"] {
+    margin: 1vh 0px;
+}
+
+.buttonheading {
+    font-size: 4.5vh;
+    color: #ffffff;
+}
+
+p {
+    padding: 1vh;
+    text-align: left;
+    font-size: 3vh;
+}
+
+#interestheading {
+    margin-top: 2vh;
+}
+
+#interests {
+    font-size: 3.5vh;
+    margin: 3vh 1.5vh;
+}
+
+/* The icon container is a transparent box within a button that serves to guarantee that the size of the icon on a button can grow and shrink according to the screen size. 
+
+This is an example of a page-specific height. Depending how high the icon needs to be, the size can be varied. Please use vh properties.*/
+
+.profilepiccontainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    margin-top: 2vh;
+}
+
+/* ********************************************** ICON CONTAINERS for this page ********************************************** */
+
+/* In HTML, the respective icons can be assigned by naming the id of the iconcontainer. The IDs are specified below with "#" --> ID sign.*/
+
+#iconcontainer_simon {
+    background-image: url(Design/ProfilePics/simon.png);
+}
+
+#iconcontainer_emma {
+    background-image: url(Design/ProfilePics/emma.png);
+}
+
+#iconcontainer_luke {
+    background-image: url(Design/ProfilePics/luke.png);
+}
+
+#iconcontainer_kurt {
+    background-image: url(Design/ProfilePics/kurt.png);
+}

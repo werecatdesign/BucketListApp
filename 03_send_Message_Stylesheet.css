@@ -1,0 +1,90 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+.main h2{
+    color: #ffffff;
+}
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+/* *************************************************** Messages TEXTBOXES **************************************************** */
+
+.container {
+     color: white;
+    background-color: #ff8d11;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-decoration: none;
+}
+.container:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+/*************************BUTTON SEND**************************************/
+
+input[type=submit] {
+    background-color: #ff8d11;
+    border: none;
+    border-radius: 25px; 
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+   
+}
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+
+[data-role="textbox"] {
+    margin: 1vh 0px;
+}
+
+.buttonheading {
+    font-size: 3vh;
+}
+
+/* Specification for the textbox containing Simon's (or anyone else's) Profile picture is that it is transparent. */
+
+.profilepicbox {
+    color: #ffffff;
+    padding: 2vw;
+    border-radius: 25px;
+    border-style: none;
+    font-family: Tahoma;
+    margin-top: 1vh;
+    background-color: #2a70a3;
+}
+
+/* The icon container is a transparent box within a button that serves to guarantee that the size of the icon on a button can grow and shrink according to the screen size. 
+
+This is an example of a page-specific height. Depending how high the icon needs to be, the size can be varied. Please use vh properties.*/
+.iconcontainer {
+    height: 9vh;
+}
+
+.profilepiccontainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh;
+}
+
+/* *********************************************** ICON CONTAINERS for this page ********************************************** */
+
+/* In HTML, the respective icons can be assigned by naming the id of the iconcontainer. The IDs are specified below with "#" --> ID sign.*/
+

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--- DISCOVER Sub Page: Sports --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>DISCOVER: Sports</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created discover subpage stylesheet --->
+        <link rel = "stylesheet" href = "04_Discover_Sub_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    <body id = "bootstrap-overrides">
+        
+        <!--- Help Section --->
+            <div class = "helpbox" id="helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>Discover: Sports</b></h2>
+                    <p>Discover what other users put on their sports bucket lists.</p>
+                    <p><u>Buttons:</u><br>
+                        <image src ="Design/Elements/bucketlist_checker.png" alt = "Details" height ="25px"></image> View details on a bucket list item.<br>
+                        <image src ="Design/Elements/addcontact.png" alt = "Add Item" height ="25px"></image> Add an item to your own bucket list.<br>
+                        <image src ="Design/Elements/sendmessage.png" alt = "Send Message" height ="25px"></image> Send a message to the creator of a bucket list item.<br>
+                        <image src ="Design/Elements/homebutton.png" alt = "Home Button" height ="25px"></image> Return to the home page.<br>
+                        <image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>
+                </div>
+            </div>
+        
+        <!--- Add Item Confirmation --->
+            <div class = "helpbox" id="addeditem1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeAdded()"></button>
+                <div class = "helptext" id = "addeditemtext">
+                    <p>This item has been added to your personal bucket list.</p>
+                    <a href = "#" class = "fullwidthtextbox" id = "gotobucketlist" onclick="closeAdded()"><h2 class = "buttonheading">Go to my bucket list</h2></a>
+                </div>
+            </div>
+        
+        <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+        <div class = "header" data-role = "header">
+            <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+            <h1 class = "headerheading">
+            Sports
+            </h1>
+            <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+        </div>
+        
+        <!------------------------------------------------------ PAGE --------------------------------------------------------------->
+        
+             
+        <div class = "page" data-role = "page">            
+                  
+            <!--- Regular Page - Main Part --->
+            <div class = "main">            
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <a href = "02_kurts_profile_main.html" class = "iconcontainer" id = "iconcontainer_kurt"></a>
+                    <div class = "rightcontainer">
+                        <h2 class = "buttonheading">Kurt Weller</h2>
+                        <p>Start to play tennis on a professional level</p>
+                        <a href = "101_Details_playTennis.html" class = "iconcontainer" id = "iconcontainer_details"></a> 
+                        <a class = "iconcontainer" id = "iconcontainer_additem" onclick="openAdded(); addBLItem('bl_tennis')"></a>
+                        <a href = "03_Chat_Messages_kurt.html" class = "iconcontainer" id = "iconcontainer_sendmessage"></a>
+                    </div>
+                </div>
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <a href = "02_emmas_profile_main.html" class = "iconcontainer" id = "iconcontainer_emma"></a>
+                    <div class = "rightcontainer">
+                        <h2 class = "buttonheading">Emma Patterson</h2>
+                        <p>Give yoga classes</p>
+                        <a href = "101_Details_Yoga.html" class = "iconcontainer" id = "iconcontainer_details"></a> 
+                        <a class = "iconcontainer" id = "iconcontainer_additem" onclick="openAdded(); addBLItem('bl_yoga')"></a>
+                        <a href = "03_Chat_Messages_emma.html" class = "iconcontainer" id = "iconcontainer_sendmessage"></a>
+                    </div>
+                </div>
+                <div class = "fullwidthtextbox" data-role = "textbox">
+                    <a href = "02_lukes_profile_main.html" class = "iconcontainer" id = "iconcontainer_luke"></a>
+                    <div class = "rightcontainer">
+                        <h2 class = "buttonheading">Luke Smith</h2>
+                        <p>Lose 15kg through fitness training</p>
+                        <a href = "101_Details_LoseWeight.html" class = "iconcontainer" id = "iconcontainer_details"></a> 
+                        <a class = "iconcontainer" id = "iconcontainer_additem" onclick="openAdded(); addBLItem('bl_15kg')"></a>
+                        <a href = "03_Chat_Messages_luke.html" class = "iconcontainer" id = "iconcontainer_sendmessage"></a>
+                    </div>
+                </div>
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>
+            
+            
+            
+            <div class = "footer" data-role = "footer"></div>
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+        
+    </body>
+</html>

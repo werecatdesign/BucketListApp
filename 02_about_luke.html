@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--- MY PROFILE: About Luke --->
+
+<html>
+    <!---------------------------------------------------------- HEAD ------------------------------------------------------------->
+    
+    <!--- Leave the head as it is for every page you create --->
+    <head>
+        <title>ABOUT LUKE</title>
+        <meta name="viewport" content="width=device-width,user-scalable= no" />
+        <meta charset = "UTF-8">
+        
+        <!--- Self-created standard stylesheet for this project --->
+        <link rel = "stylesheet" href = "00_StandardStylesheet.css">
+        
+        <!--- Self-created home screen stylesheet --->
+        <link rel = "stylesheet" href = "02_About_Me_Stylesheet.css">
+        
+        <!--- Self-Created Javascript to make the Bucket List App run smoothly --->
+        <script src="JS/BLA_Javascript.js"></script>
+        
+        <!--- J-QUERY file to make the self-created Javascript work --->
+        <script src="JS/jquery-3.1.1.min-BLA.js"></script>
+        
+        <!--- Bootstrap CSS stylesheet --->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--- Bootstrap Javascript files --->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    
+    <!---------------------------------------------------------- BODY ------------------------------------------------------------->
+    
+    <!--- Use the ID "bootstrap-overrides" for the body, otherwise the body settings created in our stylesheet is in conflict with the body settings from the bootstrap stylesheet. The reason for using an ID is that an ID always weighs more in HTML than a class and especially more than a standard element like "body". And what weighs more is prioritised. --->
+    
+    <body id = "bootstrap-overrides">
+                
+        <!--- Help Section --->
+            <div class = "helpbox" id = "helpbox1">
+                <button class = "closebutton" data-role = "navbutton" onclick="closeHelp()"></button>
+                <div class = "helptext">
+                    <h2 class = "helpheading"><b>About a User</b></h2>
+                    <p>In this section of a user's profile, his/her personal information is displayed for other users and yourself.</p>
+                    <p><u>Buttons:</u><br><image src ="Design/Elements/backbutton_whiteonblue.png" alt = "Back Button" height ="25px"></image> Return to the previous page.</p>                    
+                </div>
+                    
+            </div>       
+        
+        
+           <!---------------------------------------------------------- HEADER ------------------------------------------------------->
+            <div class = "header" data-role = "header">
+                <a class = "homebutton" data-role="navbutton" href = "00_home_page.html"></a>
+                <h1 class = "headerheading">
+                About Luke
+                </h1>
+                <button class = "helpbutton" data-role="navbutton" onclick="openHelp()"></button>
+            </div> 
+        
+        <!---------------------------------------------------------- PAGE --------------------------------------------------------->
+        <div class = "page" data-role = "page">            
+          
+            
+            <!--- Regular Page - Main Part ---> <!--- PLEASE READ: Buttons are linked via <a href = "">, everything where it says button instead of a is still not programmed, which means that there is still no page that I could link to. I left button because it's easier to see where I have not yet entered a link yet. --->
+            
+            <div class = "main">
+                
+                <div class = "profilepicbox">
+                    <div class = "profilepiccontainer" id = "iconcontainer_luke"></div>
+                </div>
+                <h2 class = "buttonheading"><b>Luke Smith</b></h2>
+                <div class = "fullwidthtextbox">
+                    <div class="textboxcenter" data-role = "textbox">
+                        <h2 class = "buttonheading">Bio</h2>
+                        <p>Some call me crazy, I call myself an adventurer! My motto is: Never take life too seriously, because you won't make it out alive. Enjoy every moment of it! A true explorer, an adventurous spirit, young at heart - that's me!
+                        <br> - L U K E </p>
+                    </div> 
+                </div>
+                <h2 class = "buttonheading" id = "interestheading"><b>My Interests</b></h2>         
+                <div class = "halfwidthtextboxes">
+                    <div class="textboxleft" data-role = "textbox">
+                        <h2 class = "buttonheading" id = "interests">Exploring</h2> 
+                    </div>
+                    <div class="textboxleft" data-role = "textbox">
+                        <h2 class = "buttonheading" id = "interests">Food</h2> 
+                    </div>
+                </div>
+                <div class = "halfwidthtextboxes">
+                    <div class="textboxleft" data-role = "textbox">
+                        <h2 class = "buttonheading" id = "interests">Culture</h2> 
+                    </div>
+                    <div class="textboxleft" data-role = "textbox">
+                        <h2 class = "buttonheading" id = "interests">Painting</h2> 
+                    </div>
+                </div>
+                <form>
+                    <input class = "backbutton" data-role="navbutton" type = "button" onclick="history.back()">
+                </form>
+            </div>
+            
+            <div class = "footer" data-role = "footer"></div>
+            
+        </div>
+        
+        <!------------------------------------------------------ END PAGE ----------------------------------------------------------->
+        
+                
+    </body>                                                                                              
+  </html>

@@ -1,0 +1,280 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+/* Useful website for html, css and Bootstrap: w3school.com */
+
+
+/* ********************************************************* GENERAL SETTINGS ********************************************************* */
+
+/*Define typefaces*/
+
+@font-face { font-family: 'Hobo';
+             src: url('Fonts/HoboRegular.ttf') format('truetype'); }
+
+@font-face { font-family: 'Tahoma';
+             src: url('Fonts/Tahoma.ttf') format('truetype'); }
+
+
+/*Avoiding trouble with unexpected margins and paddings */
+body, div, section, article, header, footer, nav, figure, figcaption, ul, li, a, p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+#bootstrap-overrides {
+    background-color: #2a70a3;
+}
+
+h1 {
+    font-family: Hobo;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Tahoma;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Tahoma;
+}
+
+/* *********************************************************** HEADER *********************************************************** */
+
+[data-role="header"]{
+	flex: 0 0 auto;
+}
+
+.header {
+    background-color: #1a4564;
+	color: #ffffff;
+	padding: 0px 5vw;
+    text-align: center;
+}
+
+.headerheading {
+    font-size: 6vh;
+    margin: 2vh 0px;
+    font-family: Hobo;
+}
+
+#smallerheading {
+    font-size: 4.5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#smallerheading2 {
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* *********************************************************** PAGE & MAIN *********************************************************** */
+
+[data-role="page"]{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 0;
+	position: relative;
+    padding: 0;
+}
+
+.page {
+    text-align: center;
+    overflow: scroll;
+    background-color: #2a70a3;
+}
+
+.main {
+    padding: 0px 5vw;
+}
+
+/* *********************************************************** FOOTER *********************************************************** */
+
+[data-role="footer"]{
+	flex: 0 0 auto;
+}
+
+.footer {
+    background-color: rgba (0,0,0,0);
+	height: 12vh;
+    width: 100%;
+}
+
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+/* *************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page or another stylesheet needs to be created.  To see an example, please look at the stylesheet "Home_Stylesheet".*/
+
+[data-role="textbox"] {
+    color: #ffffff;
+    background-color: #ff8d11;
+    padding: 2vw;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: 1vh 3vw 6vh #1a4564;
+    font-family: Tahoma;
+}
+
+[data-role="textbox"]:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*A textbox that covers the full width of the screen. A textbox can be turned into a clickable button by declaring it as a button in HTML --> <button class = "fullwidthtextbox"> instead of <div class = "fullwidthtextbox">.*/
+.fullwidthtextbox {
+    width: .main.width;
+    display: flex;
+}
+.textboxcenter{
+    width: 100%;
+    display: block;
+}
+.textboxmessages{
+    width: 100%;
+    display: block;
+}
+
+
+/* A (flex-direction: row) container for two textboxes that cover half of the screen each. */
+.halfwidthtextboxes {
+    display: flex;
+    width: .main.width;
+    justify-content: space-between;
+}
+
+/* A textbox that covers the left half of the screen. A textbox can be turned into a clickable button by declaring it as a button in HTML --> <button class = "textboxleft"> instead of <div class = "textboxleft">.*/
+.textboxleft {
+    margin-right: 3vw;
+    flex: 0 0 45%;
+}
+
+/* A textbox that covers the right half of the screen. A textbox can be turned into a clickable button by declaring it as a button in HTML --> <button class = "textboxright"> instead of <div class = "textboxright">.*/
+.textboxright {
+    margin-left: 3vw;
+    flex: 0 0 45%;
+}
+
+/* The icon container is a transparent box within a button that serves to guarantee that the size of the icon on a button can grow and shrink according to the screen size.
+
+Specify the height that you need on the page-specific stylesheet. An example is given on the "Home_Stylesheet".*/
+.iconcontainer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* *********************************************************** BUTTONS *********************************************************** */
+
+/* ********************************************** NAVIGATION BUTTONS ********************************************** */
+
+/* Nav buttons are the icons include the home icon, the help icon and the back icon */
+[data-role="navbutton"] {
+    border-style: none;
+    background-size: cover;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+}
+
+/* ********************************************** HOME BUTTON ********************************************** */
+
+.homebutton {
+    background-image: url(Design/Elements/Home_whiteonorange.png);
+    position: fixed;
+    left: 4vw;
+    top: 1.5vh;
+}
+
+.helpbutton.selected {
+    background-image: url(Design/Elements/Home_orangeonwhite.png);
+}
+
+/* ************************************************ HELP BUTTON ************************************************ */
+
+.helpbutton {
+    background-image: url(Design/Elements/Questionmark_whiteonorange.png);
+    position: fixed;
+    right: 4vw;
+    top: 1.5vh;
+}
+
+.helpbutton.selected {
+    background-image: url(Design/Elements/Questionmark_orangeonwhite.png);
+}
+
+/* ********************************************** BACK BUTTON *********************************************** */
+
+.backbutton {
+    background-image: url(Design/Elements/buttonBack.png);
+    position: fixed;
+    left: 4vw;
+    bottom: 1.5vh;
+    z-index: 3;
+}
+
+/* ******************************************* GEAR WHEEL (EDIT) ******************************************** */
+
+.gearwheel {
+    background-image: url(Design/Elements/OrangeGearWheel.png);
+    position: fixed;
+    right: 4vw;
+    top: .header.height;
+    margin-top: 2.5vh;
+}
+
+/* *********************************************************** HELP POP-UP ******************************************************* */
+
+.helpbox {
+	margin: 0;
+	width: 0%; /* 0 width - change this with JavaScript */
+    height: 0%; /* 0 height */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0; /* Stay on the right */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the helpbox */
+    background-color: #424242;
+    position: relative;
+    display: block;
+}
+
+.visible {
+	min-height: 100vh;
+    display: block;
+}
+
+.helptext {
+    text-align: left;
+    padding-top: 10vh;
+    color: #ffffff;
+    background-color: #ff8d11;
+    padding: 5vh;
+    border-radius: 25px;
+    border: #ffffff dotted 2px;
+    font-size: 3.5vh;
+    margin: 5vh;
+}
+
+.helpheading {
+    font-size: 4vh;
+}
+
+/* Close button. Don't forget to assign data-role = "navbutton" in html. */
+
+.closebutton {
+    background-image: url(Design/Elements/X_blueonwhite.png);
+    position: absolute;
+    right: 4vh;
+    top: 2vh;
+}

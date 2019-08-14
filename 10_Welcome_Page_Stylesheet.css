@@ -1,0 +1,99 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+/* Useful website for html, css and Bootstrap: w3school.com */
+
+
+/* ********************************************************* GENERAL SETTINGS ********************************************************* */
+
+/*Define typefaces*/
+
+@font-face { font-family: 'Hobo';
+             src: url('Fonts/HoboRegular.ttf') format('truetype'); }
+
+@font-face { font-family: 'Tahoma';
+             src: url('Fonts/Tahoma.ttf') format('truetype'); }
+
+
+/*Avoiding trouble with unexpected margins and paddings */
+body, div, section, article, header, footer, nav, figure, figcaption, ul, li, a, p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+h1 {
+    font-family: Hobo;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Tahoma;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Tahoma;
+}
+
+
+/* *********************************************************** PAGE & MAIN *********************************************************** */
+
+[data-role="page"]{
+	position: relative;
+    padding: 0;
+}
+
+.page {
+    text-align: center;
+    overflow: scroll;
+    background-color: #ff8d11;
+}
+
+.main {
+    padding: 0px 5vw;
+}
+
+/* ******************************************************* START PAGE ELEMENTS ******************************************************* */
+
+/* Welcome Box */
+
+.welcomebox {
+    width: 100%;
+    color: #ffffff;
+    margin: 6vh 0px;
+}
+
+.welcometext {
+    font-size: 10vh;
+    font-family: Hobo;
+}
+
+/* "Let's Start" Arrow */
+
+.arrowcontainer {
+    width: 100%;
+    margin: 6vh 0px;
+    height: 14vh;
+    background-position: center;
+    background-image: url(Design/Elements/darkArrow_letsstart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+/* The logo container is a transparent box - here: to contain the bucket logo - that serves to guarantee that the size of the logo can grow or shrink depending on the screen size. */
+
+.logocontainer {
+    background-image: url(Design/Elements/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+}

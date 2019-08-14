@@ -1,0 +1,59 @@
+/* FELLOW WEB ARTISTS PLEASE READ: In this stylesheet, sizes are expressed in their fraction of the viewheight (where 100vh is a 100% of the screen view height) and viewwidth (where 100vw is a 100% of the screen view width). This allows for the design to be responsive to any screen. Please test the screens of the pages that you write anyway. If it doesn't look good, you might choose to use a media query instead.*/
+
+
+/* *********************************************************** TEXTBOXES *********************************************************** */
+
+/* *************************************************** MAIN TEXTBOXES **************************************************** */
+
+/*The margin between the textboxes needs to adjusted according to the amount of textboxes on a page. See below. All other information for this data role has been specified on the Standard Stylesheet. The font size needs to be adjusted as well. */
+.textboxDetails{
+    background-color: #2a70a3;
+}
+[data-role="textboxDetails"] {
+    margin: 3vh 0px;
+    text-align: left;
+    display: flex;
+    background-color: #2a70a3;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+
+.buttonheading {
+    font-size: 4.5vh;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+[data-role="textbox"] p {
+    margin: 0 0 3vh 0;
+    font-size: 3vh;
+}
+
+
+.fullwidthtextboxDetails {
+    width: .main.width;
+    display: flex;
+}
+#details{
+    background-color: #1a4564;
+    color: #ffffff;
+   
+}
+
+/* *********************************************** ICON CONTAINERS for this page ********************************************** */
+
+/* In HTML, the respective icons can be assigned by naming the id of the iconcontainer. The IDs are specified below with "#" --> ID sign.*/
+
+/*bucket list icon*/
+#iconcontainer_details {
+    background-image: url(Design/Elements/Bucket_blueonwhite.png);
+    float: left;
+    height: 8vh;
+    flex: 0 0 16vh;
+}
+/* *********************************************************** Added Item POP-UP ******************************************************* */
+
+#addedcontacttext {
+    background-color: #2a70a3;
+}
